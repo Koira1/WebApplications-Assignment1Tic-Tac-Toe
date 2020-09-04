@@ -7,14 +7,14 @@ var playArray = [];
 function onClickTable(event) {
   var who = player();
   if (who === 1) {
-    document.getElementById(event.target.id).innerHTML = "X";
+    document.getElementById(event.target.id).innerHTML = "x";
     var cell = event.target.id;
     cell = cell.replace("C", "");
     var rowcolumn = parseInt(cell, 10);
     playArray[rowcolumn] = "X";
     checkWinner("X");
   } else {
-    document.getElementById(event.target.id).innerHTML = "Y";
+    document.getElementById(event.target.id).innerHTML = "o";
     cell = event.target.id;
     cell = cell.replace("C", "");
     rowcolumn = parseInt(cell, 10);
